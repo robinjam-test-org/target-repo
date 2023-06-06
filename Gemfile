@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-gem "activerecord", "~> 6.0.5"
+gem "activerecord", "~> 6.1.7"
