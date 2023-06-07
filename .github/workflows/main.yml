@@ -4,5 +4,7 @@ on:
 jobs:
   bar:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
     - run: gh api /repos/robinjam-test-org/dependabot-auto-merger/actions/workflows/foo.yml/dispatches --input - <<< '{"ref":"master","inputs":{"foo":"This is a test"}}'
