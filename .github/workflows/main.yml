@@ -1,6 +1,9 @@
 on:
   workflow_dispatch:
 
+permissions:
+  actions: write
+
 jobs:
   bar:
     runs-on: ubuntu-latest
